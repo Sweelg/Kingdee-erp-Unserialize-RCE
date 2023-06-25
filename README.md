@@ -1,4 +1,4 @@
-## 金蝶云星空 Kingdee-RCE
+## 金蝶云星空 Kingdee-erp-Unserialize-RCE
 
 由于金蝶云星空数据通信默认采用的是二进制数据格式，需要进行序列化与反序列化，在此过程中未对数据进行签名或校验，导致客户端发出的数据可被攻击者恶意篡改，写入包含恶意代码的序列化数据，达到在服务端远程命令执行的效果。该漏洞不仅存在于金蝶云星空管理中心（默认8000端口），普通应用（默认80端口）也存在类似问题。
 
@@ -11,7 +11,7 @@
 8.x版本：8.0.0.202205 至 8.1.0.20221110
 
 ```
-usage: Kingdee-RCE.py [-h] [-u URL] [--check] [-f FILE] [-t THREAD] [-T TIMEOUT] [-o OUTPUT] [-p PROXY] [--cmd CMD]
+usage: Kingdee-erp-Unserialize-RCE.py [-h] [-u URL] [--check] [-f FILE] [-t THREAD] [-T TIMEOUT] [-o OUTPUT] [-p PROXY] [--cmd CMD]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -31,7 +31,7 @@ optional arguments:
 ### poc
 
 ```
-python .\Kingdee-RCE.py -f .\url.txt --check -t 10
+python .\Kingdee-erp-Unserialize-RCE.py -f .\url.txt --check -t 10
 ```
 
 ![](https://raw.githubusercontent.com/Sweelg/-Kingdee-erp-Unserialize-RCE/master/img/1.png)
@@ -39,7 +39,7 @@ python .\Kingdee-RCE.py -f .\url.txt --check -t 10
 ### exp
 
 ```
-python .\Kingdee-RCE.py -u http://host --cmd 'dir'
+python .\Kingdee-erp-Unserialize-RCE.py -u http://host --cmd 'dir'
 ```
 
 ![](https://raw.githubusercontent.com/Sweelg/-Kingdee-erp-Unserialize-RCE/master/img/2.png)
