@@ -12,7 +12,8 @@
 
 ### Usage
 ```
-usage: Kingdee-erp-Unserialize-RCE.py [-h] [-u URL] [--check] [-f FILE] [-t THREAD] [-T TIMEOUT] [-o OUTPUT] [-p PROXY] [--cmd CMD]
+usage: Kingdee-erp-Unserialize-RCE.py [-h] [-u URL] [--check] [-f FILE] [-t THREAD] [-T TIMEOUT] [-o OUTPUT]
+                                      [-p PROXY] [--cmd CMD]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -27,6 +28,7 @@ optional arguments:
                         Vuln url output file (e.g. result.txt)
   -p PROXY, --proxy PROXY
                         Request Proxy (e.g http://127.0.0.1:8080)
+  --cmd CMD             execute cmd (e.g. whoami)
 ```
 
 ### poc
