@@ -15,7 +15,7 @@ usage: Kingdee-erp-Unserialize-RCE.py [-h] [-u URL] [--check] [-f FILE] [-t THRE
 
 optional arguments:
   -h, --help            show this help message and exit
-  -u URL, --url URL     Target url(e.g. url.txt)
+  -u URL, --url URL     Target url(e.g. http://127.0.0.1)
   --check               Check if vulnerable
   -f FILE, --file FILE  Target file(e.g. url.txt)
   -t THREAD, --thread THREAD
